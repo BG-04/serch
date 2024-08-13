@@ -1,0 +1,265 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 20px;
+    direction: rtl; /* إضافة هذه الخاصية لتغيير اتجاه النص إلى اليمين */
+    text-align: right; /* إضافة هذه الخاصية لجعل النصوص تبدأ من اليمين */
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+#modeToggle {
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center; /* اجعل الزر في المنتصف */
+}
+
+.light-mode #modeToggle {
+    background-color: #ddd;
+    color: #000;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    text-align: right; /* محاذاة العناوين الرئيسية إلى اليمين */
+}
+
+.light-mode h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    text-align: right; /* محاذاة العناوين الرئيسية إلى اليمين في الوضع الفاتح */
+}
+
+h2 {
+    font-size: 28px;
+    text-align: right; /* محاذاة العناوين الفرعية إلى اليمين */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right; /* محاذاة النصوص داخل الجدول إلى اليمين */
+    direction: rtl; /* تغيير اتجاه الجدول إلى اليمين */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 14px;
+    text-align: right; /* محاذاة محتويات الجدول إلى اليمين */
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+    font-size: 20px;
+}
+
+.light-mode th {
+    background-color: #ddd;
+    color: #000;
+}
+
+.images {
+    margin-top: 20px;
+    text-align: center; /* جعل الصور في المنتصف */
+}
+
+.images img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sources {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right; /* محاذاة النصوص داخل قسم المراجع إلى اليمين */
+}
+
+.sources ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right; /* محاذاة النصوص داخل القائمة إلى اليمين */
+}
+
+.sources ul li {
+    margin-bottom: 10px;
+}
+
+.sources a {
+    color: #1e90ff;
+    font-size: 18px;
+    text-align: right; /* محاذاة الروابط إلى اليمين */
+}
+
+.light-mode .sources a {
+    color: #0000ee;
+}
+.video-container {
+    margin-top: 20px;
+    text-align: center; /* توسيط الفيديو */
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.student-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.student-info button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#studentName, #studentID {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+#topLeftGif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* يمكنك تعديل الحجم حسب الحاجة */
+    height: auto;
+    z-index: 1000; /* لجعل الصورة تظهر فوق جميع العناصر الأخرى */
+}
+/* الوضع الفاتح - الافتراضي */
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+#modeToggle {
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #000;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+/* الوضع الداكن */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode #modeToggle {
+    background-color: #444;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    text-align: right;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+    direction: rtl;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 14px;
+    text-align: right;
+}
+
+th {
+    background-color: #ddd;
+    color: #000;
+}
+
+.dark-mode th {
+    background-color: #444;
+    color: #fff;
+}
+
+.images {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.images img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sources {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.sources ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+.sources ul li {
+    margin-bottom: 10px;
+}
+
+.sources a {
+    color: #0000ee;
+}
+
+.dark-mode .sources a {
+    color: #1e90ff;
+}
